@@ -1,3 +1,32 @@
 name: SimpleEssentilas
 main: ArnyFour.SimpleEssentilasKit.Essentilas
-version: 1.0
+version: 0.1.4
+author: ArnyFour
+description: A simple essentilas kit for minecraft server.
+website: https://github.com/Arny4/Simple-Essentilas/ 
+permissions:
+    essentilas.*:
+         desription: Give all SimpleEssentilas commands assets
+         children:
+             essentilas.gamemode: true
+             essentilas.time: true
+             
+    essentilas.gm:
+        description: Allow change player gamemode
+        default: op
+    essentilas.time:
+        desription: Allow change time in the world
+        default: op
+        
+      
+
+commands:
+   gm:
+     desription: "Change you gamemode"
+     usage: /gm <mode>
+   day:
+     destiption: "Set time to day"
+     usage: /day
+   night:
+     desription: "Set time to night"
+     usage: /night
