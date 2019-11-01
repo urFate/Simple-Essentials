@@ -1,12 +1,12 @@
-name: SimpleEssentilas
-main: ArnyFour.SimpleEssentilasKit.Essentilas
+name: SimpleEssentials
+main: ArnyFour.SimpleEssentialsKit.Essentials
 version: 0.1.4
 author: ArnyFour
-description: A simple essentilas kit for minecraft server.
-website: https://github.com/Arny4/Simple-Essentilas/ 
+description: A simple essentials kit for minecraft server.
+website: https://github.com/Arny4/Simple-Essentials/ 
 permissions:
     essentilas.*:
-         desription: Give all SimpleEssentilas commands assets
+         desription: Give all SimpleEssentials commands assets
          children:
              essentilas.gamemode: true
              essentilas.time: true
