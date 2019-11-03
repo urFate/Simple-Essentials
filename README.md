@@ -1,4 +1,4 @@
-## Welcome to SimpleEssentilas!
+## Welcome to SimpleEssentials!
 
 
 ![alt text](img/Commands.png)
