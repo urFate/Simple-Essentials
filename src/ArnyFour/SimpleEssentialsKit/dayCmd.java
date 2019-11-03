@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 public class dayCmd implements CommandExecutor{
 
+	@SuppressWarnings("unused")
 	private Essentials plugin;
 
 	public dayCmd(Essentials plugin) {
@@ -32,7 +33,7 @@ public class dayCmd implements CommandExecutor{
 		Player p = (Player) sender;
 		World world = p.getWorld();
 		world.setTime(0); //set time 
-		sender.sendMessage(ChatColor.GREEN + "World time now:"+ ChatColor.GOLD +" Day"+ChatColor.GREEN+"!");
+		sender.sendMessage(ChatColor.GRAY + "[" + ChatColor.GOLD + "SimpleEssentials"+ ChatColor.GRAY +"] " + ChatColor.GREEN + "World time now:"+ ChatColor.GOLD +" Day"+ChatColor.GREEN+"!");
 		return true;
 	}
 

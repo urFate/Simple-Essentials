@@ -1,6 +1,6 @@
 name: SimpleEssentials
 main: ArnyFour.SimpleEssentialsKit.Essentials
-version: 0.1.4
+version: 0.1.6
 author: ArnyFour
 description: A simple essentials kit for minecraft server.
 website: https://github.com/Arny4/Simple-Essentials/ 
@@ -8,25 +8,74 @@ permissions:
     essentilas.*:
          desription: Give all SimpleEssentials commands assets
          children:
-             essentilas.gamemode: true
-             essentilas.time: true
+             essentials.gamemode: true
+             essentials.time: true
+             essentials.broadcast: true
+             essentials.admin.*: true
+             essentials.fly: true
+             essentials.heal: true
              
-    essentilas.gm:
+    essentials.admin.*:
+         description: Give all admin commands
+         children:
+             essentials.ban: true
+             essentials.banIp: true
+             essentials.kick: true
+             
+    essentials.gm:
         description: Allow change player gamemode
         default: op
-    essentilas.time:
-        desription: Allow change time in the world
+    essentials.time:
+        description: Allow change time in the world
+        default: op
+    essentials.broadcast:
+        description: Allow send broadcast message
+        default: op
+    essentials.fly:
+        description: Allow fly to the sky
+        default: op
+    essentials.heal:
+        description: Healng you
+        default: op
+    essentials.ban:
+        description: Allow ban players
+        default: op
+    essentials.banIp: 
+        description: Allow ban ip players
+        default: op
+    essentials.kick:
+        description: Allow kick players
         default: op
         
-      
-
+    
 commands:
-   gm:
-     desription: "Change you gamemode"
+   gamemode:
+     description: Change you gamemode
      usage: /gm <mode>
+     aliases: [gm, gamem, gmode]
    day:
-     destiption: "Set time to day"
+     description: Set time to day
      usage: /day
    night:
-     desription: "Set time to night"
+     description: Set time to night
      usage: /night
+   broadcast:
+     description: Send broadcast message
+     usage: /bc <message>
+     aliases: bc
+   fly:
+     description: You can fly!
+     usage: /fly <player>
+   heal:
+     description: Heling you
+     usage: /heal
+   ban:
+     description: Ban player
+     usage: /ban <player>
+   unban:
+     description: Unban player
+     usage: /unban <player>
+     aliases: uban
+   kick:
+     description: Kick player
+     usage: /kick <player>

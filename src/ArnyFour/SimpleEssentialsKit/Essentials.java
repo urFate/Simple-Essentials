@@ -17,10 +17,18 @@ public class Essentials extends JavaPlugin{
 			Bukkit.getConsoleSender().sendMessage("[SimpleEssentials]Config file " + ChatColor.GREEN + "created!");
 		}
 		
+		
+		
 		//getting commands
-		getCommand("gm").setExecutor(new gmCmd(this));
+		getCommand("gamemode").setExecutor(new gmCmd(this));
 		getCommand("day").setExecutor(new dayCmd(this));
 		getCommand("night").setExecutor(new nightCmd(this));
+		getCommand("bc").setExecutor(new bcCmd(this));
+		getCommand("kick").setExecutor(new kickCmd(this));
+		getCommand("fly").setExecutor(new flyCmd(this));
+		getCommand("heal").setExecutor(new healCmd(this));
+		getCommand("ban").setExecutor(new banCmd(this));
+		getCommand("unban").setExecutor(new unbanCmd(this));
 		
 		//register events
 		Bukkit.getPluginManager().registerEvents(new welcomeMsg(this), this);
