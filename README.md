@@ -2,6 +2,7 @@
 
 
 ![alt text](img/Commands.png)
+* Plugin .jar file releases on [SpigotMc](https://www.spigotmc.org/resources/simpleessentials.72449/) only now!
 * /gm - I want other gamemode!
 * /day - I dont want sleep, i want day!
 * /night - I want sleepy darkness!
